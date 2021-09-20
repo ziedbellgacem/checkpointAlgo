@@ -1,0 +1,16 @@
+ALGORITHM algorithm_name  
+   VAR     
+       NM,NV,NC:INTEGER ; 
+              CH:CHAR  ;
+ BEGIN  
+         WHILE (CH<>".") DO  
+             NC:=NC+1   
+             IF (CH="O" or CH="i" OR CH="e" or CH="u" or CH="a" or CH="y") THEN     
+              NV:=NV+1  ;  
+              IF (CH=" ") THEN    
+                      NM:=NM+1      ;
+              END_IF       
+              END_IF  
+ END_WHILE  
+ write(" Nombre de mot":NM+1;"nombre de charactere":NC+1;"Nombre de voeille":NV) ;
+    END
